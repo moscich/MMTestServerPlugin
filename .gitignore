@@ -30,3 +30,12 @@ DerivedData
 # `pod install` in .travis.yml
 #
 # Pods/
+Example/.idea/encodings.xml
+Example/.idea/Example.iml
+Example/.idea/modules.xml
+Example/.idea/vcs.xml
+Example/.idea/workspace.xml
+Example/.idea/xcode.xml
+Example/.idea/runConfigurations/MMTestServerPlugin_Example.xml
+Example/.idea/runConfigurations/Production_Target.xml
+Example/.idea/scopes/scope_settings.xml

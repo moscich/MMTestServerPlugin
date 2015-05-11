@@ -1,6 +1,9 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'MMTestServerPlugin', :exclusive => true do
+target 'MMTestServerPlugin', :exclusive => false do
+end
+
+target 'Test Target', :exclusive => true do
   pod "MMTestServerPlugin", :path => "../"
 end
 
