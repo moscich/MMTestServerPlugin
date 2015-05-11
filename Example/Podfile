@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'MMTestServerPlugin', :exclusive => true do
+  pod "MMTestServerPlugin", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "MMTestServerPlugin", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
