@@ -24,15 +24,22 @@
   self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
   self.tableView.dataSource = self;
   self.tableView.delegate = self;
+
+  UILabel *titleLabel = [UILabel new];
+  titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+  titleLabel.text = @"Choose Test server";
+  [self.view addSubview:titleLabel];
   [self.view addSubview:self.tableView];
 
-  [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(20)-[_tableView]-(20)-|" options:nil metrics:nil views:NSDictionaryOfVariableBindings(_tableView)]];
+  [self.view addConstraint:[NSLayoutConstraint constraintWithItem:titleLabel attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
+  [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(20)-[titleLabel]-[_tableView]-(20)-|" options:nil metrics:nil views:NSDictionaryOfVariableBindings(_tableView, titleLabel)]];
   [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_tableView]-|" options:nil metrics:nil views:NSDictionaryOfVariableBindings(_tableView)]];
-  self.view.backgroundColor = [UIColor greenColor];
 
   self.netServiceBrowser = [[NSNetServiceBrowser alloc] init];
   [self.netServiceBrowser setDelegate:self];
   [self.netServiceBrowser searchForServicesOfType:@"_TestIOSServer._tcp." inDomain:@""];
+
+  self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (id)initWithSuccess:(void (^)(NSNetService *))success {

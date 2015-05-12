@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0173B7E035234007D7D53B8C /* libPods-Production Target.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 352FBA357DDBAE4E7A2BF5B0 /* libPods-Production Target.a */; };
 		411F0B161CEC957EB573D1BC /* libPods-Test Target.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 038E466B7C65FE5C27820315 /* libPods-Test Target.a */; };
 		4884FEDEA961149AD4CD50D9 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F391948670B64AB369F4BA5B /* libPods-Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -15,8 +16,7 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* MMAppDelegate.m */; };
-		6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F59F195388D20070C39A /* Main_iPhone.storyboard */; };
-		6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A2195388D20070C39A /* Main_iPad.storyboard */; };
+		6003F5A1195388D20070C39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F59F195388D20070C39A /* Main.storyboard */; };
 		6003F5A7195388D20070C39A /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* MMViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
@@ -30,9 +30,8 @@
 		796D6FA81B01346300E72C9B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		796D6FA91B01346300E72C9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		796D6FAA1B01346300E72C9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		796D6FAD1B01346300E72C9B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A2195388D20070C39A /* Main_iPad.storyboard */; };
 		796D6FAE1B01346300E72C9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		796D6FAF1B01346300E72C9B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F59F195388D20070C39A /* Main_iPhone.storyboard */; };
+		796D6FAF1B01346300E72C9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F59F195388D20070C39A /* Main.storyboard */; };
 		796D6FB01B01346300E72C9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +48,10 @@
 /* Begin PBXFileReference section */
 		038E466B7C65FE5C27820315 /* libPods-Test Target.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test Target.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D379EE26B38C11310527C1 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		352FBA357DDBAE4E7A2BF5B0 /* libPods-Production Target.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Production Target.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FBC1942C03D119CD99F7EB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* MMTestServerPlugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMTestServerPlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4753DBA55C91C674A76E4E56 /* Pods-Production Target.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Production Target.release.xcconfig"; path = "Pods/Target Support Files/Pods-Production Target/Pods-Production Target.release.xcconfig"; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* MMTestServerPlugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MMTestServerPlugin.app; path = "Production Target.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -60,8 +61,7 @@
 		6003F59B195388D20070C39A /* MMTestServerPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMTestServerPlugin-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* MMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* MMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A0195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		6003F5A3195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		6003F5A0195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6003F5A5195388D20070C39A /* MMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* MMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -76,6 +76,7 @@
 		796D6FB61B01346400E72C9B /* MMTestServerPlugin copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MMTestServerPlugin copy-Info.plist"; path = "/Users/marekmoscichowski/Documents/Development/MMTestServerPlugin/Example/MMTestServerPlugin copy-Info.plist"; sourceTree = "<absolute>"; };
 		80E308CBD7C9BC897FC26B03 /* Pods-MMTestServerPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMTestServerPlugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMTestServerPlugin/Pods-MMTestServerPlugin.release.xcconfig"; sourceTree = "<group>"; };
 		9CAE861A67B973D8D2CDD6BE /* libPods-MMTestServerPlugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMTestServerPlugin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A921318E48867D95142A3E8E /* Pods-Production Target.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Production Target.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Production Target/Pods-Production Target.debug.xcconfig"; sourceTree = "<group>"; };
 		BDC6881FAB6B4E3FCEDC4649 /* MMTestServerPlugin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MMTestServerPlugin.podspec; path = ../MMTestServerPlugin.podspec; sourceTree = "<group>"; };
 		BEE9BC54F9D21AEF2AEA8D35 /* Pods-MMTestServerPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMTestServerPlugin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMTestServerPlugin/Pods-MMTestServerPlugin.debug.xcconfig"; sourceTree = "<group>"; };
 		DD87BF28B6304A1786701A60 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				0173B7E035234007D7D53B8C /* libPods-Production Target.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +155,7 @@
 				9CAE861A67B973D8D2CDD6BE /* libPods-MMTestServerPlugin.a */,
 				F391948670B64AB369F4BA5B /* libPods-Tests.a */,
 				038E466B7C65FE5C27820315 /* libPods-Test Target.a */,
+				352FBA357DDBAE4E7A2BF5B0 /* libPods-Production Target.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,8 +165,7 @@
 			children = (
 				6003F59C195388D20070C39A /* MMAppDelegate.h */,
 				6003F59D195388D20070C39A /* MMAppDelegate.m */,
-				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
-				6003F5A2195388D20070C39A /* Main_iPad.storyboard */,
+				6003F59F195388D20070C39A /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* MMViewController.h */,
 				6003F5A6195388D20070C39A /* MMViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -221,6 +223,8 @@
 				DD87BF28B6304A1786701A60 /* Pods-Tests.release.xcconfig */,
 				60ADC0E658C89B5251434B73 /* Pods-Test Target.debug.xcconfig */,
 				F54DBE31CA78A77AE2FD9212 /* Pods-Test Target.release.xcconfig */,
+				A921318E48867D95142A3E8E /* Pods-Production Target.debug.xcconfig */,
+				4753DBA55C91C674A76E4E56 /* Pods-Production Target.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -326,9 +330,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
+				6003F5A1195388D20070C39A /* Main.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,9 +348,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				796D6FAD1B01346300E72C9B /* Main_iPad.storyboard in Resources */,
 				796D6FAE1B01346300E72C9B /* Images.xcassets in Resources */,
-				796D6FAF1B01346300E72C9B /* Main_iPhone.storyboard in Resources */,
+				796D6FAF1B01346300E72C9B /* Main.storyboard in Resources */,
 				796D6FB01B01346300E72C9B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +369,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMTestServerPlugin/Pods-MMTestServerPlugin-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Production Target/Pods-Production Target-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5FDE696F86BAE9E9CE339F32 /* Check Pods Manifest.lock */ = {
@@ -495,20 +497,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6003F59F195388D20070C39A /* Main_iPhone.storyboard */ = {
+		6003F59F195388D20070C39A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6003F5A0195388D20070C39A /* Base */,
 			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		6003F5A2195388D20070C39A /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5A3195388D20070C39A /* Base */,
-			);
-			name = Main_iPad.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
@@ -596,6 +590,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A921318E48867D95142A3E8E /* Pods-Production Target.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -609,6 +604,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4753DBA55C91C674A76E4E56 /* Pods-Production Target.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

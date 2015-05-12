@@ -1,14 +1,16 @@
+source 'https://github.com/moscich/MMMyPodSpec.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'MMTestServerPlugin', :exclusive => false do
+
+target 'Production Target' do
 end
+
 
 target 'Test Target', :exclusive => true do
   pod "MMTestServerPlugin", :path => "../"
 end
 
 target 'Tests', :exclusive => true do
-  pod "MMTestServerPlugin", :path => "../"
 
   pod 'Specta'
   pod 'Expecta'

@@ -39,7 +39,7 @@
 - (void)askUserForTestService:(void (^)(NSNetService *))success {
   UIWindow *window = [[UIApplication sharedApplication] keyWindow];
   self.controller = [[MMResolveTestServerViewController alloc] initWithSuccess:success];
-  self.controller.view.frame = window.bounds;
+  self.controller.view.frame = CGRectMake(20, window.bounds.size.height/4, window.bounds.size.width -40, window.bounds.size.height / 2 );
   [window addSubview:self.controller.view];
 }
 
