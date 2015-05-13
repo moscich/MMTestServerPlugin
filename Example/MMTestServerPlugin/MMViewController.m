@@ -10,20 +10,79 @@
 
 @interface MMViewController ()
 
+@property(nonatomic, strong) CLLocationManager *manager;
+
 @end
 
 @implementation MMViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  [self setupLocationManager];
+  [self setupBeaconView];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupLocationManager {
+  self.manager = [[CLLocationManager alloc] init];
+  self.manager.delegate = self;
+  NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:@"F7826DA6-4FA2-4E98-8024-BC5B71E0893E"];
+  CLBeaconRegion *beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid identifier:@"com.miquido.Protuction-Target"];
+  [self.manager requestAlwaysAuthorization];
+  [self.manager startRangingBeaconsInRegion:beaconRegion];
+}
+
+- (void)setupBeaconView {
+  self.beaconView = [MMBeaconFoundView new];
+  self.beaconView.delegate = self;
+  self.beaconView.translatesAutoresizingMaskIntoConstraints = NO;
+  [self.view addSubview:self.beaconView];
+  [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.beaconView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
+  self.constraint = [NSLayoutConstraint constraintWithItem:self.beaconView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:600];
+  [self.view addConstraint:self.constraint];
+  [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.beaconView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:0.7 constant:0]];
+  [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.beaconView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeHeight multiplier:0.7 constant:0]];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
+  for (CLBeacon *beacon in beacons) {
+    if (beacon.proximity == CLProximityImmediate) if (!self.shown) {
+      self.shown = YES;
+      [self show:beacon];
+    }
+  }
+}
+
+- (void)show:(CLBeacon *)beacon {
+  self.beaconView.majorLabel.text = [NSString stringWithFormat:@"Major: %d", [beacon.major intValue]];
+  self.beaconView.minorLabel.text = [NSString stringWithFormat:@"Minor: %d", [beacon.minor intValue]];
+
+  self.constraint.constant = 0;
+
+  [UIView animateWithDuration:1.0
+                        delay:0
+       usingSpringWithDamping:0.5
+        initialSpringVelocity:0.5
+                      options:UIViewAnimationOptionTransitionNone
+                   animations:^{
+                       [self.view layoutIfNeeded];
+
+                   } completion:nil];
+}
+
+- (void)dismissBeaconView {
+  self.constraint.constant = 600;
+
+  [UIView animateWithDuration:1.5
+                        delay:0
+       usingSpringWithDamping:0.5
+        initialSpringVelocity:0
+                      options:UIViewAnimationOptionTransitionNone
+                   animations:^{
+                       [self.view layoutIfNeeded];
+
+                   } completion:^(BOOL finished) {
+              self.shown = NO;
+          }];
 }
 
 @end

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "MMBeaconFoundView.h"
 
-@interface MMViewController : UIViewController
+@interface MMViewController : UIViewController <CLLocationManagerDelegate, MMBeaconFoundViewDelegate>
 
+@property(nonatomic) BOOL shown;
+@property(nonatomic, strong) NSLayoutConstraint *constraint;
+@property(nonatomic, strong) MMBeaconFoundView *beaconView;
 @end

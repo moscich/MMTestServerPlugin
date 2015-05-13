@@ -3,6 +3,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 
 target 'Production Target' do
+  pod "AFNetworking"
 end
 
 
