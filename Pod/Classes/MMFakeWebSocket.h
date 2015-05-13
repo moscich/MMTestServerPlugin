@@ -10,16 +10,15 @@
 
 @class MMTestAutoResolver;
 @class MMResolveTestServerViewController;
+@class MMTestEventAggregate;
 
-@protocol MMFakeWebSocketDelegate
+@protocol MMTestEventAggregate
 
-- (void)locateFakeBeacon;
+- (void)testEvent:(id)message;
 
 @end
 
 @interface MMFakeWebSocket : NSObject <SRWebSocketDelegate, NSNetServiceBrowserDelegate, NSStreamDelegate, NSStreamDelegate, NSNetServiceDelegate>
-
-@property (nonatomic, weak) id <MMFakeWebSocketDelegate> delegate;
 
 @property(nonatomic, strong) NSNetServiceBrowser *netServiceBrowser;
 
@@ -35,6 +34,8 @@
 @property(nonatomic, strong) id <UIApplicationDelegate> applicationDelegate;
 
 @property(nonatomic) Method customAppDelegate;
+
+@property(nonatomic, strong) id <MMTestEventAggregate> eventAggregate;
 
 + (instancetype)fakeManager;
 

@@ -10,8 +10,10 @@
 		0173B7E035234007D7D53B8C /* libPods-Production Target.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 352FBA357DDBAE4E7A2BF5B0 /* libPods-Production Target.a */; };
 		411F0B161CEC957EB573D1BC /* libPods-Test Target.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 038E466B7C65FE5C27820315 /* libPods-Test Target.a */; };
 		4884FEDEA961149AD4CD50D9 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F391948670B64AB369F4BA5B /* libPods-Tests.a */; };
+		5304218008EB7514A1B2D854 /* CLLocationManager+TestTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042604C023AD4134D09D34 /* CLLocationManager+TestTarget.m */; };
 		53042D37F4A189A67579EF58 /* MMBeaconFoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304290F7B293CBF7502BC60 /* MMBeaconFoundView.m */; };
 		53042D48102269089B9E822B /* MMBeaconFoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304290F7B293CBF7502BC60 /* MMBeaconFoundView.m */; };
+		53042E6C3B0D71603502B674 /* MMTestEventAggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042B988B4828D28EECAE0D /* MMTestEventAggregate.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -53,8 +55,12 @@
 		352FBA357DDBAE4E7A2BF5B0 /* libPods-Production Target.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Production Target.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FBC1942C03D119CD99F7EB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4753DBA55C91C674A76E4E56 /* Pods-Production Target.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Production Target.release.xcconfig"; path = "Pods/Target Support Files/Pods-Production Target/Pods-Production Target.release.xcconfig"; sourceTree = "<group>"; };
+		53042604C023AD4134D09D34 /* CLLocationManager+TestTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+TestTarget.m"; sourceTree = "<group>"; };
 		5304290F7B293CBF7502BC60 /* MMBeaconFoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBeaconFoundView.m; sourceTree = "<group>"; };
+		53042A81F6B6F870351765D4 /* CLLocationManager+TestTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+TestTarget.h"; sourceTree = "<group>"; };
+		53042B988B4828D28EECAE0D /* MMTestEventAggregate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTestEventAggregate.m; sourceTree = "<group>"; };
 		53042E903C02074D5F9A9A9F /* MMBeaconFoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBeaconFoundView.h; sourceTree = "<group>"; };
+		53042F7763D6F50EDDB2A7EC /* MMTestEventAggregate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTestEventAggregate.h; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* Production Target.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Production Target.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +132,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53042700254D346AA3DFADF1 /* TestTarget */ = {
+			isa = PBXGroup;
+			children = (
+				53042604C023AD4134D09D34 /* CLLocationManager+TestTarget.m */,
+				53042A81F6B6F870351765D4 /* CLLocationManager+TestTarget.h */,
+				53042B988B4828D28EECAE0D /* MMTestEventAggregate.m */,
+				53042F7763D6F50EDDB2A7EC /* MMTestEventAggregate.h */,
+			);
+			path = TestTarget;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +153,7 @@
 				6003F58B195388D20070C39A /* Products */,
 				DB523B362FFCBD5453AB1F1C /* Pods */,
 				796D6FB61B01346400E72C9B /* MMTestServerPlugin copy-Info.plist */,
+				53042700254D346AA3DFADF1 /* TestTarget */,
 			);
 			sourceTree = "<group>";
 		};
@@ -483,6 +501,8 @@
 				796D6FA51B01346300E72C9B /* MMViewController.m in Sources */,
 				796D6FA61B01346300E72C9B /* main.m in Sources */,
 				53042D37F4A189A67579EF58 /* MMBeaconFoundView.m in Sources */,
+				5304218008EB7514A1B2D854 /* CLLocationManager+TestTarget.m in Sources */,
+				53042E6C3B0D71603502B674 /* MMTestEventAggregate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

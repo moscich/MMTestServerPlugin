@@ -63,10 +63,6 @@
   }
 }
 
-- (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message {
-  [self.delegate locateFakeBeacon];
-}
-
 - (NSString *)getStringFromService:(NSNetService *)service {
 
   struct sockaddr_in *socketAddress = nil;
@@ -83,12 +79,9 @@
   return nil;
 }
 
-- (void)webSocketDidOpen:(SRWebSocket *)webSocket{
-
+- (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message {
+  [self.eventAggregate testEvent:message];
 }
 
-- (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error{
-
-}
 
 @end
