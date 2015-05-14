@@ -21,7 +21,10 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Expecta (1.0.0)
-  - MMTestServerPlugin (0.1.0):
+  - KIF (3.2.2):
+    - KIF/XCTest (= 3.2.2)
+  - KIF/XCTest (3.2.2)
+  - MMTestServerPlugin (0.2.0):
     - SocketRocket (~> 0.2)
   - SocketRocket (0.2.0)
   - Specta (1.0.0)
@@ -29,6 +32,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - Expecta
+  - KIF
   - MMTestServerPlugin (from `../`)
   - Specta
 
@@ -39,8 +43,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
   Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
-  MMTestServerPlugin: fa720ce2f43dd573a4adb46a54ff6627b3e444e8
+  KIF: b0bd762b0c7890b04920cf618021d6d4fd5127bd
+  MMTestServerPlugin: 73300474f43a242da3b89010c2113b9625e4a7a2
   SocketRocket: 54a4ac2f354c4e8c51ef5dcd4a13bc556d4f2b7c
   Specta: 96fe05fe5c7348b5223f85e862904f6e832abb14
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.35.0

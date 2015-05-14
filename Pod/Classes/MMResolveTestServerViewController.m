@@ -24,6 +24,7 @@
   self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
   self.tableView.dataSource = self;
   self.tableView.delegate = self;
+  self.tableView.accessibilityLabel = @"Fake Server Table View";
 
   UILabel *titleLabel = [UILabel new];
   titleLabel.translatesAutoresizingMaskIntoConstraints = NO;

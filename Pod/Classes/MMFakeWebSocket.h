@@ -20,22 +20,15 @@
 
 @interface MMFakeWebSocket : NSObject <SRWebSocketDelegate, NSNetServiceBrowserDelegate, NSStreamDelegate, NSStreamDelegate, NSNetServiceDelegate>
 
-@property(nonatomic, strong) NSNetServiceBrowser *netServiceBrowser;
 
 @property(nonatomic, strong) NSNetService *netService;
-@property(nonatomic, assign) Method applicationMethod;
-@property(nonatomic, strong) UIWindow *fakeWindow;
 @property(nonatomic, strong) SRWebSocket *webSocket;
-
 @property(nonatomic, strong) MMTestAutoResolver *testAutoResolver;
-
 @property(nonatomic, strong) MMResolveTestServerViewController *controller;
-
-@property(nonatomic, strong) id <UIApplicationDelegate> applicationDelegate;
-
 @property(nonatomic) Method customAppDelegate;
-
 @property(nonatomic, strong) id <MMTestEventAggregate> eventAggregate;
+@property(nonatomic, copy) NSString *serverAddress;
+@property(nonatomic, assign) BOOL workaroundTwiceUIApplicationSwizzle;
 
 + (instancetype)fakeManager;
 

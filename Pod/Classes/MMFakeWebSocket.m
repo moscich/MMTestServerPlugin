@@ -45,9 +45,9 @@
 
 - (void)launchWebSocketsForService:(NSNetService *)service {
   [self.controller.view removeFromSuperview];
-  NSString *address = [self getStringFromService:service];
+  self.serverAddress = [self getStringFromService:service];
 
-  NSString *urlString = [NSString stringWithFormat:@"ws://%@:%d", address, service.port];
+  NSString *urlString = [NSString stringWithFormat:@"ws://%@:%d", self.serverAddress, service.port];
   self.webSocket = [[SRWebSocket alloc] initWithURL:[NSURL URLWithString:urlString]];
   self.webSocket.delegate = self;
   [self.webSocket open];

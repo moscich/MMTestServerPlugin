@@ -1,14 +1,17 @@
-source 'https://github.com/moscich/MMMyPodSpec.git'
 source 'https://github.com/CocoaPods/Specs.git'
-
 
 target 'Production Target' do
   pod "AFNetworking"
 end
 
-
 target 'Test Target', :exclusive => true do
   pod "MMTestServerPlugin", :path => "../"
+end
+
+target 'Integration Tests', :exclusive => true do
+  pod "MMTestServerPlugin", :path => "../"
+  pod "AFNetworking"
+  pod "KIF"
 end
 
 target 'Tests', :exclusive => true do
