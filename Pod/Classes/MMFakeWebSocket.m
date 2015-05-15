@@ -27,6 +27,7 @@
 }
 
 - (void)start{
+  NSLog(@"start");
   self.testAutoResolver = [MMTestAutoResolver new];
   void (^success)(NSNetService *) = ^(NSNetService *service) {
       [self launchWebSocketsForService:service];
@@ -38,9 +39,12 @@
 
 - (void)askUserForTestService:(void (^)(NSNetService *))success {
   UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-  self.controller = [[MMResolveTestServerViewController alloc] initWithSuccess:success];
-  self.controller.view.frame = CGRectMake(20, window.bounds.size.height/4, window.bounds.size.width -40, window.bounds.size.height / 2 );
-  [window addSubview:self.controller.view];
+  if(self.controller == nil){
+    self.controller = [[MMResolveTestServerViewController alloc] initWithSuccess:success];
+    self.controller.view.frame = CGRectMake(20, window.bounds.size.height/4, window.bounds.size.width -40, window.bounds.size.height / 2 );
+    [window addSubview:self.controller.view];
+
+  }
 }
 
 - (void)launchWebSocketsForService:(NSNetService *)service {

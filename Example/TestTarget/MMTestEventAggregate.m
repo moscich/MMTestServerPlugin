@@ -58,5 +58,8 @@
   }
 }
 
+- (void)dealloc{
+
+}
 
 @end

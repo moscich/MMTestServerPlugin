@@ -33,6 +33,7 @@
 
 - (void)setupBeaconView {
   self.beaconView = [MMBeaconFoundView new];
+  self.beaconView.hidden = NO;
   self.beaconView.delegate = self;
   self.beaconView.translatesAutoresizingMaskIntoConstraints = NO;
   [self.view addSubview:self.beaconView];
@@ -56,11 +57,11 @@
 }
 
 - (void)show:(CLBeacon *)beacon {
-  self.beaconView.majorLabel.text = [NSString stringWithFormat:@"Major: %d", [beacon.major intValue]];
-  self.beaconView.minorLabel.text = [NSString stringWithFormat:@"Minor: %d", [beacon.minor intValue]];
+  [self.beaconView setMajor:[beacon.major intValue]];
+  [self.beaconView setMinor:[beacon.minor intValue]];
 
   self.constraint.constant = 0;
-
+  self.beaconView.hidden = NO;
   [UIView animateWithDuration:1.0
                         delay:0
        usingSpringWithDamping:0.5
@@ -85,6 +86,7 @@
 
                    } completion:^(BOOL finished) {
               self.shown = NO;
+              self.beaconView.hidden = YES;
           }];
 }
 

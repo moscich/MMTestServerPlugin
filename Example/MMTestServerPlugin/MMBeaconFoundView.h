@@ -13,6 +13,7 @@
 
 @property(nonatomic, weak) id <MMBeaconFoundViewDelegate> delegate;
 
-@property(nonatomic, strong) UILabel *majorLabel;
-@property(nonatomic, strong) UILabel *minorLabel;
+- (void)setMinor:(int)minor;
+- (void)setMajor:(int)major;
+
 @end

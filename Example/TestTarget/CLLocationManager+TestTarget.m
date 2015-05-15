@@ -6,6 +6,7 @@
 #import "CLLocationManager+TestTarget.h"
 #import "MMFakeWebSocket.h"
 #import "MMTestEventAggregate.h"
+#import "UIApplication+TestTarget.h"
 
 
 @implementation CLLocationManager (TestTarget)
@@ -13,7 +14,7 @@
 - (void)startRangingBeaconsInRegion:(CLBeaconRegion *)region {
   MMTestEventAggregate *aggregate = [MMTestEventAggregate eventAggregate];
   aggregate.locationManager = self;
-  [MMFakeWebSocket fakeManager].eventAggregate = aggregate;
+  [UIApplication fakeManager].eventAggregate = aggregate;
 }
 
 @end

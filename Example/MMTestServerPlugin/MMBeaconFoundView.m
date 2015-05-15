@@ -5,6 +5,12 @@
 
 #import "MMBeaconFoundView.h"
 
+@interface MMBeaconFoundView ()
+
+@property(nonatomic, strong) UILabel *majorLabel;
+@property(nonatomic, strong) UILabel *minorLabel;
+
+@end
 
 @implementation MMBeaconFoundView {
 
@@ -23,6 +29,7 @@
 
 - (void)setupCloseButton {
   UIButton *closeButton = [UIButton new];
+  closeButton.accessibilityLabel = @"Close";
   [closeButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
   [self addSubview:closeButton];
   [closeButton setTitle:@"Close" forState:UIControlStateNormal];
@@ -35,7 +42,11 @@
 - (void)setupMajorMinorLabel {
 
   self.majorLabel = [UILabel new];
+  self.accessibilityLabel = @"Beacon Found";
+  self.majorLabel.accessibilityLabel = @"Major";
   self.minorLabel = [UILabel new];
+  self.minorLabel.accessibilityLabel = @"Minor";
+
   self.majorLabel.translatesAutoresizingMaskIntoConstraints = NO;
   self.minorLabel.translatesAutoresizingMaskIntoConstraints = NO;
   [self addSubview:self.majorLabel];
@@ -49,5 +60,16 @@
 - (void)closeButtonTapped {
   [self.delegate dismissBeaconView];
 }
+
+- (void)setMinor:(int)minor {
+  self.minorLabel.text = [NSString stringWithFormat:@"Minor: %d", minor];
+  self.minorLabel.accessibilityValue = [NSString stringWithFormat:@"Minor: %d", minor];
+}
+
+- (void)setMajor:(int)major {
+  self.majorLabel.text = [NSString stringWithFormat:@"Major: %d", major];
+  self.majorLabel.accessibilityValue = [NSString stringWithFormat:@"Major: %d", major];
+}
+
 
 @end

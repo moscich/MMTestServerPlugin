@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-
+  NSLog(@"BLALBLABAL");
   self.discoveredServices = [NSMutableArray new];
 
   self.tableView = [UITableView new];

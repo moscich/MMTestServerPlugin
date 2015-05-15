@@ -25,6 +25,7 @@
 
 - (void)timeout {
   [self.netServiceBrowser stop];
+  NSLog(@"failure 1");
   self.failure();
 }
 
@@ -39,6 +40,7 @@
     return;
   }
   if(!moreComing){
+    NSLog(@"failure 2");
     self.failure();
   }
 }

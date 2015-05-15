@@ -14,6 +14,7 @@
 		5304218008EB7514A1B2D854 /* CLLocationManager+TestTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042604C023AD4134D09D34 /* CLLocationManager+TestTarget.m */; };
 		53042D37F4A189A67579EF58 /* MMBeaconFoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304290F7B293CBF7502BC60 /* MMBeaconFoundView.m */; };
 		53042D48102269089B9E822B /* MMBeaconFoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304290F7B293CBF7502BC60 /* MMBeaconFoundView.m */; };
+		53042DBEB5B29F07B9F4E79F /* IntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 530420FDC9B5392999D8BD31 /* IntegrationTests.m */; };
 		53042E6C3B0D71603502B674 /* MMTestEventAggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042B988B4828D28EECAE0D /* MMTestEventAggregate.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -29,8 +30,6 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		79314E0D1B0517A90056EBCC /* Integration_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79314E0C1B0517A90056EBCC /* Integration_Tests.m */; };
-		79314E131B0518320056EBCC /* IntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304244C1A5ABEB8AF2D9EFB /* IntegrationTests.m */; };
 		796D6FA41B01346300E72C9B /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* MMAppDelegate.m */; };
 		796D6FA51B01346300E72C9B /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* MMViewController.m */; };
 		796D6FA61B01346300E72C9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
@@ -67,11 +66,12 @@
 		42BBC675095C416389A8CD30 /* libPods-Integration Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Integration Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FBC1942C03D119CD99F7EB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4753DBA55C91C674A76E4E56 /* Pods-Production Target.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Production Target.release.xcconfig"; path = "Pods/Target Support Files/Pods-Production Target/Pods-Production Target.release.xcconfig"; sourceTree = "<group>"; };
-		5304244C1A5ABEB8AF2D9EFB /* IntegrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegrationTests.m; sourceTree = "<group>"; };
+		530420FDC9B5392999D8BD31 /* IntegrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegrationTests.m; sourceTree = "<group>"; };
 		53042604C023AD4134D09D34 /* CLLocationManager+TestTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+TestTarget.m"; sourceTree = "<group>"; };
 		5304290F7B293CBF7502BC60 /* MMBeaconFoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBeaconFoundView.m; sourceTree = "<group>"; };
 		53042A81F6B6F870351765D4 /* CLLocationManager+TestTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+TestTarget.h"; sourceTree = "<group>"; };
 		53042B988B4828D28EECAE0D /* MMTestEventAggregate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTestEventAggregate.m; sourceTree = "<group>"; };
+		53042E4F5EC70C3CFBF19D38 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		53042E903C02074D5F9A9A9F /* MMBeaconFoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBeaconFoundView.h; sourceTree = "<group>"; };
 		53042F7763D6F50EDDB2A7EC /* MMTestEventAggregate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTestEventAggregate.h; sourceTree = "<group>"; };
 		585276FD3152712DADFFEF0E /* Pods-IntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntegrationTests/Pods-IntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,8 +98,6 @@
 		60ADC0E658C89B5251434B73 /* Pods-Test Target.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Target.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test Target/Pods-Test Target.debug.xcconfig"; sourceTree = "<group>"; };
 		79314E011B050F730056EBCC /* Tests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Tests copy-Info.plist"; path = "/Users/marekmoscichowski/Documents/Documents/Development/MMTestServerPlugin/Example/Tests copy-Info.plist"; sourceTree = "<absolute>"; };
 		79314E081B0517A90056EBCC /* Integration Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Integration Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79314E0B1B0517A90056EBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79314E0C1B0517A90056EBCC /* Integration_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Integration_Tests.m; sourceTree = "<group>"; };
 		796D6FB51B01346300E72C9B /* MMTestServerPlugin copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MMTestServerPlugin copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		796D6FB61B01346400E72C9B /* MMTestServerPlugin copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MMTestServerPlugin copy-Info.plist"; path = "/Users/marekmoscichowski/Documents/Development/MMTestServerPlugin/Example/MMTestServerPlugin copy-Info.plist"; sourceTree = "<absolute>"; };
 		80E308CBD7C9BC897FC26B03 /* Pods-MMTestServerPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMTestServerPlugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMTestServerPlugin/Pods-MMTestServerPlugin.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,14 +159,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5304200A350B19D171CE6986 /* IntegrationTests */ = {
-			isa = PBXGroup;
-			children = (
-				5304244C1A5ABEB8AF2D9EFB /* IntegrationTests.m */,
-			);
-			path = IntegrationTests;
-			sourceTree = "<group>";
-		};
 		53042700254D346AA3DFADF1 /* TestTarget */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +183,6 @@
 				796D6FB61B01346400E72C9B /* MMTestServerPlugin copy-Info.plist */,
 				53042700254D346AA3DFADF1 /* TestTarget */,
 				79314E011B050F730056EBCC /* Tests copy-Info.plist */,
-				5304200A350B19D171CE6986 /* IntegrationTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -284,8 +273,9 @@
 		79314E091B0517A90056EBCC /* Integration Tests */ = {
 			isa = PBXGroup;
 			children = (
-				79314E0C1B0517A90056EBCC /* Integration_Tests.m */,
 				79314E0A1B0517A90056EBCC /* Supporting Files */,
+				530420FDC9B5392999D8BD31 /* IntegrationTests.m */,
+				53042E4F5EC70C3CFBF19D38 /* Info.plist */,
 			);
 			path = "Integration Tests";
 			sourceTree = "<group>";
@@ -293,7 +283,6 @@
 		79314E0A1B0517A90056EBCC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				79314E0B1B0517A90056EBCC /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -623,8 +612,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79314E131B0518320056EBCC /* IntegrationTests.m in Sources */,
-				79314E0D1B0517A90056EBCC /* Integration_Tests.m in Sources */,
+				53042DBEB5B29F07B9F4E79F /* IntegrationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

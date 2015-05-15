@@ -3,6 +3,7 @@
 // Copyright (c) 2015 Miquido. All rights reserved.
 //
 
+#import <MMTestServerPlugin/MMFakeWebSocket.h>
 #import "UIApplication+TestTarget.h"
 #import "MMFakeWebSocket.h"
 
@@ -40,7 +41,11 @@
   return result;
 }
 
-- (NSString *)establishedFakeServerAddress {
++ (MMFakeWebSocket *)fakeManager {
+  return [MMFakeWebSocket fakeManager];
+}
+
++ (NSString *)establishedFakeServerAddress {
   return [MMFakeWebSocket fakeManager].serverAddress;
 }
 

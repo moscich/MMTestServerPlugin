@@ -6,7 +6,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class MMFakeWebSocket;
+
 @interface UIApplication (TestTarget)
 
 
++ (MMFakeWebSocket *)fakeManager;
+
++ (NSString *)establishedFakeServerAddress;
 @end

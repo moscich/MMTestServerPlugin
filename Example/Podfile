@@ -11,6 +11,8 @@ end
 target 'Integration Tests', :exclusive => true do
   pod "MMTestServerPlugin", :path => "../"
   pod "AFNetworking"
+  pod 'Specta'
+  pod 'Expecta'
   pod "KIF"
 end
 
