@@ -3,6 +3,8 @@
 // Copyright (c) 2015 Marek Mościchowski. All rights reserved.
 //
 
+#import <GameController/GameController.h>
+#import <UIKit/UIKit.h>
 #import "MMBeaconFoundView.h"
 
 @interface MMBeaconFoundView ()
@@ -22,6 +24,8 @@
     self.backgroundColor = [UIColor whiteColor];
     [self setupCloseButton];
     [self setupMajorMinorLabel];
+    self.layer.borderColor = [UIColor colorWithRed:86.0/255 green:197.0/255 blue:208.0/255 alpha:1].CGColor;
+    self.layer.borderWidth = 2.0f;
   }
 
   return self;
@@ -29,8 +33,9 @@
 
 - (void)setupCloseButton {
   UIButton *closeButton = [UIButton new];
+    [closeButton setTitleColor:[UIColor colorWithRed:86.0/255 green:197.0/255 blue:208.0/255 alpha:1] forState:UIControlStateNormal];
   closeButton.accessibilityLabel = @"Close";
-  [closeButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+  [closeButton setTitleColor:[UIColor colorWithRed:86.0/255 green:197.0/255 blue:208.0/255 alpha:1] forState:UIControlStateNormal];
   [self addSubview:closeButton];
   [closeButton setTitle:@"Close" forState:UIControlStateNormal];
   closeButton.translatesAutoresizingMaskIntoConstraints = NO;

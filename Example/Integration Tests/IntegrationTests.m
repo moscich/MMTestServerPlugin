@@ -29,17 +29,17 @@ SpecBegin(Integration_Test)
           }
       });
 
-      it(@"Should allow to access location data if asked", ^{
-          @try {
-            [tester waitForTappableViewWithAccessibilityLabel:@"Allow"];
-            [tester tapViewWithAccessibilityLabel:@"Allow"];
-          }
-          @catch(NSException *exception) {
-            NSLog(@"TEST");
-          }
-
-
-      });
+//      it(@"Should allow to access location data if asked", ^{
+//          @try {
+//            [tester waitForTappableViewWithAccessibilityLabel:@"Allow"];
+//            [tester tapViewWithAccessibilityLabel:@"Allow"];
+//          }
+//          @catch(NSException *exception) {
+//            NSLog(@"TEST");
+//          }
+//
+//
+//      });
 
       it(@"Should have address of fake server", ^{
           XCTAssertNotNil(address);

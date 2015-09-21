@@ -6,6 +6,7 @@
 #import <MMTestServerPlugin/MMFakeWebSocket.h>
 #import "UIApplication+TestTarget.h"
 #import "MMFakeWebSocket.h"
+#import "MMGameController.h"
 
 @implementation UIApplication (TestTarget)
 
@@ -36,7 +37,8 @@
   BOOL result = [application.delegate application:application didFinishLaunchingWithOptions:launchOptions];
   NSLog(@"Fake");
 
-  [[MMFakeWebSocket fakeManager] start];
+//  [[MMFakeWebSocket fakeManager] start];
+  [[MMGameController instance] startOnWindow:application.delegate.window];
 
   return result;
 }

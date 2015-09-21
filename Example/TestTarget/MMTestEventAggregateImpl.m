@@ -3,14 +3,14 @@
 // Copyright (c) 2015 Marek Mościchowski. All rights reserved.
 //
 
-#import "MMTestEventAggregate.h"
+#import "MMTestEventAggregateImpl.h"
 
 @interface FakeBeacon : NSObject
 
-@property (nonatomic, strong) NSUUID *proximityUUID;
-@property (nonatomic, strong) NSNumber *major;
-@property (nonatomic, strong) NSNumber *minor;
-@property( nonatomic) CLProximity proximity;
+@property(nonatomic, strong) NSUUID *proximityUUID;
+@property(nonatomic, strong) NSNumber *major;
+@property(nonatomic, strong) NSNumber *minor;
+@property(nonatomic) CLProximity proximity;
 
 @end
 
@@ -18,12 +18,12 @@
 
 @end
 
-@implementation MMTestEventAggregate {
+@implementation MMTestEventAggregateImpl {
 
 }
 
 + (instancetype)eventAggregate {
-  static MMTestEventAggregate *testEventAggregate = nil;
+  static MMTestEventAggregateImpl *testEventAggregate = nil;
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
       testEventAggregate = [[self alloc] init];
@@ -40,7 +40,7 @@
   [self.locationManager.delegate locationManager:self.locationManager didRangeBeacons:@[beacon] inRegion:nil];
 }
 
-- (void)findFarBeacon{
+- (void)findFarBeacon {
   FakeBeacon *beacon = [FakeBeacon new];
   beacon.minor = @30087;
   beacon.major = @34293;
@@ -58,7 +58,7 @@
   }
 }
 
-- (void)dealloc{
+- (void)dealloc {
 
 }
 

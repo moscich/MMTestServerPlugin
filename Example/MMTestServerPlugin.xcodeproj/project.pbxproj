@@ -15,7 +15,7 @@
 		53042D37F4A189A67579EF58 /* MMBeaconFoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304290F7B293CBF7502BC60 /* MMBeaconFoundView.m */; };
 		53042D48102269089B9E822B /* MMBeaconFoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304290F7B293CBF7502BC60 /* MMBeaconFoundView.m */; };
 		53042DBEB5B29F07B9F4E79F /* IntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 530420FDC9B5392999D8BD31 /* IntegrationTests.m */; };
-		53042E6C3B0D71603502B674 /* MMTestEventAggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042B988B4828D28EECAE0D /* MMTestEventAggregate.m */; };
+		53042E6C3B0D71603502B674 /* MMTestEventAggregateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042B988B4828D28EECAE0D /* MMTestEventAggregateImpl.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -30,6 +30,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		79013C8F1BB0525C00A1898A /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79013C8E1BB0525C00A1898A /* GameController.framework */; };
 		796D6FA41B01346300E72C9B /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* MMAppDelegate.m */; };
 		796D6FA51B01346300E72C9B /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* MMViewController.m */; };
 		796D6FA61B01346300E72C9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
@@ -70,10 +71,10 @@
 		53042604C023AD4134D09D34 /* CLLocationManager+TestTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+TestTarget.m"; sourceTree = "<group>"; };
 		5304290F7B293CBF7502BC60 /* MMBeaconFoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBeaconFoundView.m; sourceTree = "<group>"; };
 		53042A81F6B6F870351765D4 /* CLLocationManager+TestTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+TestTarget.h"; sourceTree = "<group>"; };
-		53042B988B4828D28EECAE0D /* MMTestEventAggregate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTestEventAggregate.m; sourceTree = "<group>"; };
+		53042B988B4828D28EECAE0D /* MMTestEventAggregateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTestEventAggregateImpl.m; sourceTree = "<group>"; };
 		53042E4F5EC70C3CFBF19D38 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		53042E903C02074D5F9A9A9F /* MMBeaconFoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBeaconFoundView.h; sourceTree = "<group>"; };
-		53042F7763D6F50EDDB2A7EC /* MMTestEventAggregate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTestEventAggregate.h; sourceTree = "<group>"; };
+		53042F7763D6F50EDDB2A7EC /* MMTestEventAggregateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTestEventAggregateImpl.h; sourceTree = "<group>"; };
 		585276FD3152712DADFFEF0E /* Pods-IntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntegrationTests/Pods-IntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* Production Target.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Production Target.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,6 +97,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		60ADC0E658C89B5251434B73 /* Pods-Test Target.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Target.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test Target/Pods-Test Target.debug.xcconfig"; sourceTree = "<group>"; };
+		79013C8E1BB0525C00A1898A /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		79314E011B050F730056EBCC /* Tests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Tests copy-Info.plist"; path = "/Users/marekmoscichowski/Documents/Documents/Development/MMTestServerPlugin/Example/Tests copy-Info.plist"; sourceTree = "<absolute>"; };
 		79314E081B0517A90056EBCC /* Integration Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Integration Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		796D6FB51B01346300E72C9B /* MMTestServerPlugin copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MMTestServerPlugin copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79013C8F1BB0525C00A1898A /* GameController.framework in Frameworks */,
 				796D6FA81B01346300E72C9B /* CoreGraphics.framework in Frameworks */,
 				796D6FA91B01346300E72C9B /* UIKit.framework in Frameworks */,
 				796D6FAA1B01346300E72C9B /* Foundation.framework in Frameworks */,
@@ -164,8 +167,8 @@
 			children = (
 				53042604C023AD4134D09D34 /* CLLocationManager+TestTarget.m */,
 				53042A81F6B6F870351765D4 /* CLLocationManager+TestTarget.h */,
-				53042B988B4828D28EECAE0D /* MMTestEventAggregate.m */,
-				53042F7763D6F50EDDB2A7EC /* MMTestEventAggregate.h */,
+				53042B988B4828D28EECAE0D /* MMTestEventAggregateImpl.m */,
+				53042F7763D6F50EDDB2A7EC /* MMTestEventAggregateImpl.h */,
 			);
 			path = TestTarget;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79013C8E1BB0525C00A1898A /* GameController.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -625,7 +629,7 @@
 				796D6FA61B01346300E72C9B /* main.m in Sources */,
 				53042D37F4A189A67579EF58 /* MMBeaconFoundView.m in Sources */,
 				5304218008EB7514A1B2D854 /* CLLocationManager+TestTarget.m in Sources */,
-				53042E6C3B0D71603502B674 /* MMTestEventAggregate.m in Sources */,
+				53042E6C3B0D71603502B674 /* MMTestEventAggregateImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,7 +692,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marek Mościchowski (7MZ86VG2QR)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -874,6 +878,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MMTestServerPlugin/MMTestServerPlugin-Prefix.pch";
 				INFOPLIST_FILE = "MMTestServerPlugin copy-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.MMTestServerPluginPad;
 				PRODUCT_NAME = "MMTestServerPlugin copy";
 				WRAPPER_EXTENSION = app;
 			};
@@ -888,6 +893,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MMTestServerPlugin/MMTestServerPlugin-Prefix.pch";
 				INFOPLIST_FILE = "MMTestServerPlugin copy-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.MMTestServerPluginPad;
 				PRODUCT_NAME = "MMTestServerPlugin copy";
 				WRAPPER_EXTENSION = app;
 			};

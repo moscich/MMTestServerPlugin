@@ -7,10 +7,13 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MMTestServerPlugin/MMFakeWebSocket.h>
 #import "SRWebSocket.h"
+#import "MMTestEventAggregate.h"
 
 
-@interface MMTestEventAggregate : NSObject <MMTestEventAggregate>
+@interface MMTestEventAggregateImpl : NSObject <MMTestEventAggregate>
 @property(nonatomic, weak) CLLocationManager *locationManager;
+
+@property(nonatomic, strong) GCController *controller;
 
 + (instancetype)eventAggregate;
 @end

@@ -6,6 +6,7 @@
 #import "MMFakeWebSocket.h"
 #import "MMTestAutoResolver.h"
 #import "MMResolveTestServerViewController.h"
+#import "MMTestEventAggregate.h"
 #include <arpa/inet.h>
 
 @interface MMFakeWebSocket ()

@@ -25,7 +25,7 @@
 - (void)setupLocationManager {
   self.manager = [[CLLocationManager alloc] init];
   self.manager.delegate = self;
-  NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:@"12345678-4321-1234-4321-123456789012"];
+  NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:@"F7826DA6-4FA2-4E98-8024-BC5B71E0893E"];
   CLBeaconRegion *beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid identifier:@"com.miquido.Protuction-Target"];
   [self.manager requestAlwaysAuthorization];
   [self.manager startRangingBeaconsInRegion:beaconRegion];
@@ -46,6 +46,7 @@
 
 - (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
   for (CLBeacon *beacon in beacons) {
+    NSLog(@"beacons = %d", beacon.proximity);
     if (beacon.proximity == CLProximityImmediate) if (!self.shown) {
       self.shown = YES;
       [self show:beacon];

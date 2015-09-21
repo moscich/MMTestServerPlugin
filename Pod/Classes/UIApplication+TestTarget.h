@@ -7,11 +7,13 @@
 #import <UIKit/UIKit.h>
 
 @class MMFakeWebSocket;
+@class MMGameController;
 
 @interface UIApplication (TestTarget)
 
 
 + (MMFakeWebSocket *)fakeManager;
++ (MMGameController *)gameController;
 
 + (NSString *)establishedFakeServerAddress;
 @end

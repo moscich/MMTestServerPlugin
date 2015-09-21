@@ -7,16 +7,14 @@
 #import <SocketRocket/SRWebSocket.h>
 #import <objc/runtime.h>
 #import <UIKit/UIKit.h>
+#import <GameController/GameController.h>
 
 @class MMTestAutoResolver;
 @class MMResolveTestServerViewController;
 @class MMTestEventAggregate;
 
-@protocol MMTestEventAggregate
 
-- (void)testEvent:(id)message;
-
-@end
+@protocol MMTestEventAggregate;
 
 @interface MMFakeWebSocket : NSObject <SRWebSocketDelegate, NSNetServiceBrowserDelegate, NSStreamDelegate, NSStreamDelegate, NSNetServiceDelegate>
 
@@ -29,6 +27,8 @@
 @property(nonatomic, strong) id <MMTestEventAggregate> eventAggregate;
 @property(nonatomic, copy) NSString *serverAddress;
 @property(nonatomic, assign) BOOL workaroundTwiceUIApplicationSwizzle;
+
+@property(nonatomic, strong) UILabel *label;
 
 + (instancetype)fakeManager;
 
