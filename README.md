@@ -9,6 +9,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+This pod allows you to connect with a [SocketServer](https://github.com/moscich/SocketServer) to receive test messages from the server
+
 ## Requirements
 
 ## Installation
